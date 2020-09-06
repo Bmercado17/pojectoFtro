@@ -1,0 +1,25 @@
+.row {
+  max-width: $grid-width; // 10px = 1rem;
+  background-color: white;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+  @include clearfix;
+  //   [class^="col-"]  with the ^symbol select every attribute/elemet that starts with col-
+  //   [class$="col-"] with the $ symbol select every attribute/element that ends in col-
+  [class^="col-"] {
+    background-color: rgb(83, 221, 113);
+    float: left;
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+  .col-1-of-4 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+  .col-2-of-4 {
+    width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+  }
+}
