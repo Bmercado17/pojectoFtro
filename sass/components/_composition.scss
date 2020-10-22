@@ -1,0 +1,42 @@
+.composition {
+  position: relative;
+  margin-left: 65px; // these margins are for the block of 3 pictures watch its behaviour
+  margin-right: -40px;
+
+  &__photo {
+    width: 65%; //always scale the size of images in pecentages, it will scale better with the viewport height 'vh'
+    box-shadow: 0 2.4rem 4rem rgba($color-black, 0.6);
+    border-radius: 2px;
+    position: absolute; //this is to give position to the images, according to their 'relative' position to the parent.
+    //always go in pairs position: absolute and positon: relative
+    z-index: 10;
+    transition: all 0.3s;
+    outline-offset: 1.5rem; //outline-offset together with hover, outline gives it the frame look to the picture with the spaced padding
+    &--p1 {
+      left: 0;
+      top: -2rem;
+    }
+    &--p2 {
+      right: 0;
+      top: 2rem;
+    }
+    &--p3 {
+      left: 20%;
+      top: 10rem;
+    }
+    //all the code below together with the z index transition and outline offset above make the popup frame effect on the pictures.
+    &:hover {
+      outline: 1.2rem solid $color-primary;
+      transform: scale(1.05) translateY(-0.5rem); //this line is to pop the hovered pictured from the other three pix
+      box-shadow: 0 2.6rem 4rem rgba($color-black, 0.8);
+      z-index: 20; //watch the z-index in the main photo and then in the hover effect, this makes it look as if is popping
+    }
+  }
+  &:hover &__photo:not(:hover) {
+    transform: scale(
+      0.95
+    ); //this line is to pop the hovered pictured from the other three pix
+  }
+  //composition:hover &__photo:not(:hover)    OR OR OR =>
+  //&:hover &__photo:not(:hover){ transform: scale(.9)} this will give the pop up to the image when selected together with the frameoutline color-primary
+}

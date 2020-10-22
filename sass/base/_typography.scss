@@ -32,3 +32,33 @@ body {
   padding: 2rem;
   box-sizing: border-box;
 }
+.heading-secondary {
+  display: inline-block;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-image: linear-gradient(
+    to left,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+  &:hover {
+    transform: skewY(2deg) skewX(20deg);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.3);
+  }
+}
+.heading-tercera {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.paragraph {
+  font-size: 1.2rem;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

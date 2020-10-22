@@ -1,4 +1,5 @@
 @mixin clearfix {
+  //this is to clear the floats/ when floating tables rows
   &::after {
     content: "";
     display: table;

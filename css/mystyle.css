@@ -80,6 +80,68 @@ body {
   box-sizing: border-box;
 }
 
+.heading-secondary {
+  display: inline-block;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #85d877, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+}
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(20deg);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.heading-tercera {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.section-about {
+  background-color: #e4e0e0;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}
+
+.section-features {
+  margin-top: -8.6rem;
+  padding: 25rem 0;
+  background-image: linear-gradient(to right bottom, rgba(133, 216, 119, 0.8), rgba(40, 180, 133, 0.5)), url(/img/nat-4.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+}
+.section-features > * {
+  transform: skewY(7deg);
+}
+
 .btn {
   /* .btn-animate {
      animation-fill-mode: backwards; 
@@ -129,12 +191,30 @@ body {
   opacity: 0;
 }
 
+.btn-text:link, .btn-text:visited {
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  transition: all 0.2s;
+}
+.btn-text:hover {
+  background-color: #e4e0e0;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.17);
+  transform: translateY(-2px);
+}
+.btn-text:active {
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(171, 241, 158, 0.8), rgba(40, 180, 133, 0.5)), url(/img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(133, 216, 119, 0.8), rgba(40, 180, 133, 0.5)), url(/img/hero.jpg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 .header__logo-box {
   position: absolute;
@@ -157,12 +237,11 @@ body {
 }
 
 .row {
-  max-width: 104rem;
-  background-color: white;
+  max-width: 114rem;
   margin: 0 auto;
 }
 .row:not(:last-child) {
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 .row::after {
   content: "";
@@ -170,22 +249,85 @@ body {
   clear: both;
 }
 .row [class^=col-] {
-  background-color: #53dd71;
   float: left;
 }
 .row [class^=col-]:not(:last-child) {
-  margin-right: 6rem;
+  margin-right: 7rem;
+}
+.row .col-1-of-2 {
+  width: calc((100% - 7rem) / 2);
+}
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 7rem) / 3);
+}
+.row .col-2-of-3 {
+  width: calc( 2 * ((100% - 2 * 7rem) / 3) + 7rem );
 }
 .row .col-1-of-4 {
-  width: calc((100% - 6rem) / 2);
+  width: calc( (100% -3 * 7rem) / 5 );
 }
 .row .col-2-of-4 {
-  width: calc((100% - 2 * 6rem) / 3);
+  width: calc( 2 * ((100% -3 * 7rem) / 4) + 7rem );
+}
+.row .col-3-of-4 {
+  width: calc( 3 * ((100% -3 * 7rem) / 4) +2 * 7rem );
 }
 
-/* colors:
-light green: #7ed56f;
-medium green: #55c57a;
-dark green: #28b485; */
+.composition {
+  position: relative;
+  margin-left: 65px;
+  margin-right: -40px;
+}
+.composition__photo {
+  width: 65%;
+  box-shadow: 0 2.4rem 4rem rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.3s;
+  outline-offset: 1.5rem;
+}
+.composition__photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+.composition__photo--p2 {
+  right: 0;
+  top: 2rem;
+}
+.composition__photo--p3 {
+  left: 20%;
+  top: 10rem;
+}
+.composition__photo:hover {
+  outline: 1.2rem solid #55c57a;
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 2.6rem 4rem rgba(0, 0, 0, 0.8);
+  z-index: 20;
+}
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.95);
+}
+
+.feature-box {
+  background-color: rgba(245, 241, 241, 0.7);
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s;
+}
+.feature-box__icon {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  background-image: linear-gradient(to left, #85d877, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+.feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.02);
+}
 
 /*# sourceMappingURL=mystyle.css.map */
