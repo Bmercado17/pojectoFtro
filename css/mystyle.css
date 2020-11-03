@@ -142,6 +142,11 @@ body {
   transform: skewY(7deg);
 }
 
+.section-tours {
+  margin-top: -9rem;
+  padding: 25rem 0 50rem 0;
+}
+
 .btn {
   /* .btn-animate {
      animation-fill-mode: backwards; 
@@ -328,6 +333,117 @@ body {
 }
 .feature-box:hover {
   transform: translateY(-1.5rem) scale(1.02);
+}
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+}
+.card__side {
+  background-color: orange;
+  height: 50rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2.5rem 7rem rgba(0, 0, 0, 0.18);
+}
+.card__side--front {
+  background-color: #e4e0e0;
+}
+.card__side--back {
+  background-color: #686767;
+  transform: rotateY(180deg);
+}
+.card__side--back-1 {
+  background-image: linear-gradient(to right bottom, #ff7730, #ffb900);
+}
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0);
+}
+.card__picture {
+  background-size: cover;
+  height: 22rem;
+  background-blend-mode: multiply;
+}
+.card__picture--1 {
+  background-image: linear-gradient(to right bottom, #ff7730, #ffb900), url(../img/nat-5.jpg);
+}
+.card__picture--2 {
+  background-image: linear-gradient(to right bottom, rgba(50, 151, 245, 0.9), rgba(86, 67, 250, 0.85)), url(../img/nat-6.jpg);
+}
+.card__picture--3 {
+  background-image: linear-gradient(to left top, rgba(228, 224, 224, 0.7), rgba(50, 151, 245, 0.5)), url(../img/nat-7.jpg);
+}
+.card__heading {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: lightgray;
+  position: absolute;
+  top: 12rem;
+  right: 4rem;
+  width: 75%;
+}
+.card__heading-span {
+  padding: 1rem 1.5rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.card__heading-span--1 {
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.9), rgba(119, 119, 119, 0.85));
+}
+.card__details {
+  padding: 3rem;
+}
+.card__details ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+.card__details ul li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.card__details ul li:not(:last-child) {
+  border-bottom: 1px solid lightgray;
+}
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card__price-box {
+  text-align: center;
+  margin-bottom: 6rem;
+  color: #f5f1f1;
+}
+.card__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+.card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
+}
+.card__side--back-2 {
+  background-image: linear-gradient(to right bottom, rgba(50, 151, 245, 0.9), rgba(86, 67, 250, 0.85));
+}
+.card__side--back-3 {
+  background-image: linear-gradient(to left top, rgba(228, 224, 224, 0.7), rgba(50, 151, 245, 0.5));
 }
 
 /*# sourceMappingURL=mystyle.css.map */
