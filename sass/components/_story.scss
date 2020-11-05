@@ -1,0 +1,33 @@
+.story {
+  width: 75%;
+  margin: 0 auto; //when is a block element within a block element i can center it this way
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.2);
+  background-color: $color-white;
+  border-radius: 3px;
+  margin-top: 5rem;
+  padding: 5rem;
+  padding: 9rem; //this is working together with the nstd property transform:translateX() 9rem -3rem.
+  font-size: $default-font-size;
+  transform: skewX(-3deg);
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(
+      50% at 50% 50%
+    ); //in order for shape-outside to work, we need to float and give it width and height to the elemnt or(__shape)
+    background-color: darkorange;
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(3deg);
+
+    //for an element that is floated this works best rather than use the margin: property
+  }
+  &__img {
+    height: 100%; //for responsive webdsng always give images, either a width or specific height
+  }
+}
+.section-stories {
+  margin-top: -25rem;
+}
