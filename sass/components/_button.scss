@@ -75,3 +75,42 @@
     transform: translateY(-2px);
   }
 }
+.btn-text-2 {
+  &:link,
+  &:visited {
+    color: $color-gray-light;
+    display: inline-block;
+    text-decoration: none; //to get rid of the line below the bottom of the button.
+    border-bottom: 1px solid $color-gray-dark;
+    padding: 3px;
+    transition: all 0.2s;
+  }
+  &:hover {
+    background-color: $color-gray-dark;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.17);
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: 0 0.5rem 2rem rgba($color-black, 0.15);
+    transform: translateY(-2px);
+  }
+}
+.btn-1 {
+  cursor: pointer;
+  border: none;
+  transition: all;
+  border-bottom: 2px solid rgb(60, 80, 94);
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 2px;
+  width: 90%;
+  height: 20%;
+  margin-top: 35px;
+  outline: none;
+}
+.btn-1:active {
+  background-color: $color-gray-light;
+  box-shadow: 8px 8px 8px rgba(34, 33, 33, 0.6);
+}

@@ -1,0 +1,89 @@
+.form {
+  &__group:not(last-child) {
+    margin-bottom: 1.5rem;
+  }
+  &__input {
+    font-family: inherit;
+    font-size: 1.5rem;
+    // color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rgba($color-white, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block;
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+      border-bottom: 3px solid $color-form;
+    }
+    &:focus:invalid {
+      border-bottom: 2px solid $color-secondary-light1;
+    }
+    &::-webkit-input-placeholder {
+      color: $color-form;
+    }
+  }
+
+  &__label {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    //positioning the label text with the margins
+    color: $color-form;
+    display: block;
+    transition: all 0.4s;
+    //aligning the label text with the place-holder text
+  }
+  &__input:placeholder-shown + &__label {
+    //with the '+' you select a sibling element right immediate from the other sibling in this case label is selected cause is after input
+    //look also into '~' with that sign you select all or is more general selector.
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+  &__radio-group {
+    width: 48%;
+    display: inline-block;
+  }
+  &__radio-input {
+    display: none;
+  }
+  &__radio-label {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 4rem;
+  }
+  &__radio-button {
+    //the height on the button and the width; ::after { content with no value"", display: block and positioning top and left 50% make it look like a target
+    height: 3rem;
+    width: 3rem;
+    border: 6.3px solid $color-form;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -0.4rem;
+    &::after {
+      display: block;
+      height: 1.3rem;
+      width: 1.3rem;
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $color-form;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+  }
+  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    //selecting sibling and childs with "checked" and "~" sudo classes
+    opacity: 1;
+  }
+}

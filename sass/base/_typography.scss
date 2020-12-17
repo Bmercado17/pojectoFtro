@@ -62,3 +62,18 @@ body {
     margin-bottom: 3rem;
   }
 }
+.heading-cuarta {
+  display: inline-block;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-image: linear-gradient(to left, $color-gray-dark, $color-form);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+  &:hover {
+    transform: skewY(2deg) skewX(20deg);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.3);
+  }
+}
