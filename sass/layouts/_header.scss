@@ -2,10 +2,10 @@
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.5)
+      rgba($color-gray-light, 0.4),
+      rgba($color-light-orange, 0.3)
     ),
-    url(/img/hero.jpg);
+    url(/img/heroHeader.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -19,6 +19,7 @@
     top: 4rem;
     left: 4rem;
     height: 3.5rem;
+    border-radius: 30px;
   }
 
   &__text-box {

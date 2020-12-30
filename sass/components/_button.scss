@@ -24,13 +24,14 @@
     background-color: white;
     &::after {
       background-color: $color-white;
+      margin-left: 15px;
     }
   }
   &--green {
-    background-color: $color-primary;
+    background-color: rgba($color-light-orange, 0.6);
     color: $color-gray-light;
     &::after {
-      background-color: $color-primary;
+      background-color: $color-secondary-light;
     }
   }
   &::after {
@@ -58,10 +59,10 @@
 .btn-text {
   &:link,
   &:visited {
-    color: $color-primary;
+    color: $color-secondary-light;
     display: inline-block;
     text-decoration: none; //to get rid of the line below the bottom of the button.
-    border-bottom: 1px solid $color-primary;
+    border-bottom: 1px solid $color-secondary-light;
     padding: 3px;
     transition: all 0.2s;
   }
@@ -98,7 +99,7 @@
 .btn-1 {
   cursor: pointer;
   border: none;
-  transition: all;
+  transition: all 0.2s;
   border-bottom: 2px solid rgb(60, 80, 94);
   display: inline-block;
   text-transform: uppercase;

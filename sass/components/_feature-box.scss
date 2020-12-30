@@ -1,8 +1,9 @@
 .feature-box {
-  // margin-left: 10vh;
+  // margin-left: 20vh; this was commented out at 10vh
   background-color: rgba($color-white, 0.7);
   font-size: 1.5rem;
-  padding: 2rem;
+
+  padding: 2.5rem; //this was 2 rem
   text-align: center;
   border-radius: 1px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
@@ -12,10 +13,10 @@
     margin-bottom: 0.5rem;
     background-image: linear-gradient(
       to left,
-      $color-primary-light,
-      $color-primary-dark
+      $color-gray-dark,
+      $color-secondary-light
     );
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; //this had the  -webkit-background-clip prefix
     color: transparent;
     display: inline-block;
   }

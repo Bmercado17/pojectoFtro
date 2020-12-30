@@ -9,10 +9,10 @@
   padding: 25rem 0; //this was originally at 20rem
   background-image: linear-gradient(
       to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.5)
+      rgba($color-gray-light, 0.5),
+      rgba($color-secondary-light, 0.4)
     ),
-    url(/img/nat-4.jpg);
+    url(/img/heroHeader1.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   & > * {

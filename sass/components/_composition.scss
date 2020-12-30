@@ -26,7 +26,7 @@
     }
     //all the code below together with the z index transition and outline offset above make the popup frame effect on the pictures.
     &:hover {
-      outline: 1.2rem solid $color-primary;
+      outline: 1.2rem solid $color-secondary-light;
       transform: scale(1.05) translateY(-0.5rem); //this line is to pop the hovered pictured from the other three pix
       box-shadow: 0 2.6rem 4rem rgba($color-black, 0.8);
       z-index: 20; //watch the z-index in the main photo and then in the hover effect, this makes it look as if is popping

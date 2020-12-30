@@ -39,8 +39,8 @@ body {
   font-weight: 600;
   background-image: linear-gradient(
     to left,
-    $color-primary-light,
-    $color-primary-dark
+    $color-gray-dark,
+    $color-secondary-light
   );
   -webkit-background-clip: text;
   color: transparent;
