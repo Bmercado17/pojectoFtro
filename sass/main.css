@@ -90,7 +90,7 @@ body {
 }
 
 .heading-primary {
-  color: #f5f1f1;
+  color: #c4c1c1;
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -214,16 +214,16 @@ body {
 }
 
 .section-about {
-  background-color: #e4e0e0;
-  padding: 25rem 0;
+  background-color: #c4c1c1;
+  padding: 26rem 0;
   margin-top: -20vh;
 }
 
 .section-features {
   margin-top: -8.6rem;
   padding: 25rem 0;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(228, 224, 224, 0.5)), to(rgba(202, 107, 43, 0.4))), url(/img/heroHeader1.jpg);
-  background-image: linear-gradient(to right bottom, rgba(228, 224, 224, 0.5), rgba(202, 107, 43, 0.4)), url(/img/heroHeader1.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(196, 193, 193, 0.5)), to(rgba(202, 107, 43, 0.4))), url(/img/heroHeader1.jpg);
+  background-image: linear-gradient(to right bottom, rgba(196, 193, 193, 0.5), rgba(202, 107, 43, 0.4)), url(/img/heroHeader1.jpg);
   background-size: cover;
   -webkit-transform: skewY(-7deg);
           transform: skewY(-7deg);
@@ -236,7 +236,7 @@ body {
 
 .section-tours {
   margin-top: -10rem;
-  background-color: #e4e0e0;
+  background-color: #c4c1c1;
   padding: 25rem 0 15rem 0;
 }
 
@@ -248,13 +248,13 @@ body {
 
 .section-book {
   padding: 15rem 0;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#e4e0e0), to(#777));
-  background-image: linear-gradient(to right bottom, #e4e0e0, #777);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#c4c1c1), to(#777));
+  background-image: linear-gradient(to right bottom, #c4c1c1, #777);
 }
 
 .book {
   border-radius: 5px;
-  background-image: linear-gradient(105deg, rgba(228, 224, 224, 0.8) 0%, rgba(228, 224, 224, 0.7) 50%, transparent 50%), url("/img/codingLogo.jpg");
+  background-image: linear-gradient(105deg, rgba(196, 193, 193, 0.8) 0%, rgba(196, 193, 193, 0.7) 50%, transparent 50%), url("/img/codingLogo.jpg");
   background-size: 100%;
   height: 60rem;
   -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
@@ -274,6 +274,7 @@ body {
 }
 
 .btn:link, .btn:visited {
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1rem 2rem;
@@ -301,18 +302,17 @@ body {
 }
 
 .btn--white {
+  background-color: #f5f1f1;
   color: #777;
-  background-color: white;
 }
 
 .btn--white::after {
   background-color: #f5f1f1;
-  margin-left: 15px;
 }
 
 .btn--green {
   background-color: rgba(228, 157, 26, 0.6);
-  color: #e4e0e0;
+  color: #c4c1c1;
 }
 
 .btn--green::after {
@@ -349,14 +349,16 @@ body {
   padding: 3px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  text-align: center;
 }
 
 .btn-text:hover {
-  background-color: #e4e0e0;
+  background-color: #c4c1c1;
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.17);
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.17);
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
+  text-align: center;
 }
 
 .btn-text:active {
@@ -364,10 +366,11 @@ body {
           box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
+  text-align: center;
 }
 
 .btn-text-2:link, .btn-text-2:visited {
-  color: #e4e0e0;
+  color: #c4c1c1;
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #777;
@@ -409,15 +412,15 @@ body {
 }
 
 .btn-1:active {
-  background-color: #e4e0e0;
+  background-color: #c4c1c1;
   -webkit-box-shadow: 8px 8px 8px rgba(34, 33, 33, 0.6);
           box-shadow: 8px 8px 8px rgba(34, 33, 33, 0.6);
 }
 
 .header {
   height: 95vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(228, 224, 224, 0.4)), to(rgba(228, 157, 26, 0.3))), url(/img/heroHeader.jpg);
-  background-image: linear-gradient(to right bottom, rgba(228, 224, 224, 0.4), rgba(228, 157, 26, 0.3)), url(/img/heroHeader.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(196, 193, 193, 0.4)), to(rgba(228, 157, 26, 0.3))), url(/img/heroHeader.jpg);
+  background-image: linear-gradient(to right bottom, rgba(196, 193, 193, 0.4), rgba(228, 157, 26, 0.3)), url(/img/heroHeader.jpg);
   background-size: cover;
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -498,8 +501,8 @@ body {
 .footer {
   padding: 10rem 0;
   font-size: 1.2rem;
-  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(228, 224, 224, 0.9)), to(rgba(119, 119, 119, 0.7)));
-  background-image: linear-gradient(to left bottom, rgba(228, 224, 224, 0.9), rgba(119, 119, 119, 0.7));
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(196, 193, 193, 0.9)), to(rgba(119, 119, 119, 0.7)));
+  background-image: linear-gradient(to left bottom, rgba(196, 193, 193, 0.9), rgba(119, 119, 119, 0.7));
 }
 
 .footer__logo-box {
@@ -535,7 +538,7 @@ body {
 }
 
 .footer__link:link, .footer__link:visited {
-  color: #e4e0e0;
+  color: #c4c1c1;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
@@ -664,7 +667,7 @@ body {
 }
 
 .card__side--front {
-  background-color: #e4e0e0;
+  background-color: #c4c1c1;
 }
 
 .card__side--back {
@@ -705,8 +708,8 @@ body {
 }
 
 .card__picture--3 {
-  background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(228, 224, 224, 0.7)), to(rgba(167, 199, 230, 0.5))), url(/img/cardOption3.jpg);
-  background-image: linear-gradient(to left top, rgba(228, 224, 224, 0.7), rgba(167, 199, 230, 0.5)), url(/img/cardOption3.jpg);
+  background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(196, 193, 193, 0.7)), to(rgba(167, 199, 230, 0.5))), url(/img/cardOption3.jpg);
+  background-image: linear-gradient(to left top, rgba(196, 193, 193, 0.7), rgba(167, 199, 230, 0.5)), url(/img/cardOption3.jpg);
 }
 
 .card__heading {
@@ -784,8 +787,8 @@ body {
 }
 
 .card__side--back-3 {
-  background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(228, 224, 224, 0.7)), to(rgba(167, 199, 230, 0.5)));
-  background-image: linear-gradient(to left top, rgba(228, 224, 224, 0.7), rgba(167, 199, 230, 0.5));
+  background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(196, 193, 193, 0.7)), to(rgba(167, 199, 230, 0.5)));
+  background-image: linear-gradient(to left top, rgba(196, 193, 193, 0.7), rgba(167, 199, 230, 0.5));
 }
 
 .story {
