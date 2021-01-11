@@ -222,8 +222,8 @@ body {
 .section-features {
   margin-top: -8.6rem;
   padding: 25rem 0;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(196, 193, 193, 0.5)), to(rgba(202, 107, 43, 0.4))), url(/img/heroHeader1.jpg);
-  background-image: linear-gradient(to right bottom, rgba(196, 193, 193, 0.5), rgba(202, 107, 43, 0.4)), url(/img/heroHeader1.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(196, 193, 193, 0.5)), to(rgba(202, 107, 43, 0.4))), url(/img/fourcardDisplay.jpg);
+  background-image: linear-gradient(to right bottom, rgba(196, 193, 193, 0.5), rgba(202, 107, 43, 0.4)), url(/img/fourcardDisplay.jpg);
   background-size: cover;
   -webkit-transform: skewY(-7deg);
           transform: skewY(-7deg);
@@ -419,8 +419,8 @@ body {
 
 .header {
   height: 95vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(196, 193, 193, 0.4)), to(rgba(228, 157, 26, 0.3))), url(/img/heroHeader.jpg);
-  background-image: linear-gradient(to right bottom, rgba(196, 193, 193, 0.4), rgba(228, 157, 26, 0.3)), url(/img/heroHeader.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(196, 193, 193, 0.4)), to(rgba(228, 157, 26, 0.3))), url(/img/headerHero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(196, 193, 193, 0.4), rgba(228, 157, 26, 0.3)), url(/img/headerHero.jpg);
   background-size: cover;
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);

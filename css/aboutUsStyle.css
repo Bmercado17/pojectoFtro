@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(190, 190, 190);
+  line-height: 25px;
+  height: 100vh;
+}
+
+.profile {
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+h5 {
+  text-transform: uppercase;
+}
+
+.row {
+  display: flex;
+}
+
+hr {
+  border-top: 5px solid orangered;
+}
+
+.aside {
+  display: flex;
+  border-radius: 5px;
+  display: flex;
+  margin: 5px 5px;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 10px 10px 10px 10px rgba(31, 31, 34, 0.2);
+}
+
+h4 {
+  margin-left: 50px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+  width: 100%;
+}
+
+.contact_us {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.our_mission {
+  width: 100%;
+}
+
+img {
+  box-shadow: 10px 10px 10px 10px rgba(31, 31, 34, 0.2);
+  width: 100%;
+  height: 100%;
+}
