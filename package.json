@@ -1,15 +1,30 @@
 {
   "name": "pojectoftro",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass sass/main.scss css/mystyle.css"
+    "compile:sass": "sass sass/main.scss css/mystyle.css",
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
     "live-server": "^1.2.1",
+    "mongoose": "^5.11.11",
     "sass": "^1.26.10"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bmercado17/pojectoFtro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bmercado17/pojectoFtro/issues"
+  },
+  "homepage": "https://github.com/Bmercado17/pojectoFtro#readme",
+  "description": ""
 }
