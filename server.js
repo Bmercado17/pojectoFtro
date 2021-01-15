@@ -20,8 +20,7 @@ app.use(
 );
 
 mongoose.connect(
-  "mongodb+srv://askotala:Elmesia17@cluster0.0xkzj.mongodb.net/TodoApp",
-  {
+  "mongodb+srv://askotala:zzzzzzzz@cluster0.0xkzj.mongodb.net/TodoApp", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
