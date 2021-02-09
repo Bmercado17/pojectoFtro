@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-
+const port = process.env.PORT || 3000;
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
@@ -55,4 +55,4 @@ app.post("/", function (req, res) {
 
 //listen on port 3000
 
-app.listen(3000);
+app.listen(port);
