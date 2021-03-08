@@ -4,6 +4,7 @@
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem;
+
   &__side {
     background-color: orange;
     height: 50rem;
@@ -13,32 +14,37 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     border-radius: 4px;
     overflow: hidden;
     //when you assign an image to background cover, it eliminates the rounded corners because it overlaps.. overflow:hidden fixes that.
     box-shadow: 0 2.5rem 7rem rgba($color-black, 0.18);
+
     &--front {
       background-color: $color-gray-light;
     }
+
     &--back {
       background-color: rgb(104, 103, 103);
       transform: rotateY(180deg);
+
       &-1 {
-        background-image: linear-gradient(
-          to right bottom,
-          $color-tercero-light,
-          $color-tercero-light1
-        );
+        background-image: linear-gradient(to right bottom,
+            $color-tercero-light,
+            $color-tercero-light1);
         // for linear gradient is backgrnd-image
       }
     }
   }
+
   &:hover &__side--front {
     transform: rotateY(-180deg);
   }
+
   &:hover &__side--back {
     transform: rotateY(0);
   }
+
   //frontside of the first picture
   &__picture {
     background-size: cover;
@@ -49,31 +55,28 @@
     // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     // clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); this is to gve the heading card pic a cut effect
     &--1 {
-      background-image: linear-gradient(
-          to right bottom,
+      background-image: linear-gradient(to right bottom,
           rgba($color-tercero-light, 0.3),
-          rgba($color-tercero-light1, 0.5)
-        ),
+          rgba($color-tercero-light1, 0.5)),
         url(/img/cardOption1.jpg);
       //pay attention of where the .. and / direct you to. you have to direct it to the regular css file and not the scss
     }
+
     &--2 {
-      background-image: linear-gradient(
-          to right bottom,
+      background-image: linear-gradient(to right bottom,
           rgba($color-tercero-light, 1),
-          rgba($color-tercero-light1, 1.5)
-        ),
+          rgba($color-tercero-light1, 1.5)),
         url(/img/cardOption2.jpg);
     }
+
     &--3 {
-      background-image: linear-gradient(
-          to left top,
+      background-image: linear-gradient(to left top,
           rgba($color-gray-light, 0.7),
-          rgba($color-tercero-light, 0.5)
-        ),
+          rgba($color-tercero-light, 0.5)),
         url(/img/cardOption3.jpg);
     }
   }
+
   &__heading {
     font-size: 2.5rem;
     font-weight: 300;
@@ -85,36 +88,41 @@
     right: 4rem; //this should be 4, no -4 .. just experimenting.
     width: 75%;
   }
+
   &__heading-span {
     position: relative;
     padding: 1rem 1.5rem; //for the h4 inside the picture.
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; //to treat the h4/span as two separate lines. so the text gets 'alignd' if it breaks in 2
+
     &--1 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary-light, 0.9),
-        rgba($color-gray-dark, 0.85)
-      );
+      background-image: linear-gradient(to right bottom,
+          rgba($color-secondary-light, 0.9),
+          rgba($color-gray-dark, 0.85));
     }
   }
+
   //frontside of the price card
   &__details {
     padding: 3rem;
+
     ul {
       list-style: none;
       width: 80%;
       margin: 0 auto;
+
       li {
         text-align: center;
         font-size: 1.5rem;
         padding: 1rem;
+
         &:not(:last-child) {
           border-bottom: 1px solid lightgray;
         }
       }
     }
   }
+
   //front side of the Card
   &__cta {
     position: absolute;
@@ -123,34 +131,33 @@
     transform: translate(-50%, -50%);
     // width: 90%;
   }
+
   &__price-box {
     text-align: center;
     margin-bottom: 6rem;
     color: $color-white;
   }
+
   &__price-only {
     font-size: 1.4rem;
     text-transform: uppercase;
     margin-bottom: 4rem;
   }
+
   &__price-value {
     font-size: 6rem;
     font-weight: 100;
   }
 
   &__side--back-2 {
-    background-image: linear-gradient(
-      to right bottom,
-      rgba($color-tercero-light, 0.9),
-      rgba($color-tercero-light1, 0.85)
-    );
+    background-image: linear-gradient(to right bottom,
+        rgba($color-tercero-light, 0.9),
+        rgba($color-tercero-light1, 0.85));
   }
 
   &__side--back-3 {
-    background-image: linear-gradient(
-      to left top,
-      rgba($color-gray-light, 0.7),
-      rgba($color-tercero-light, 0.5)
-    );
+    background-image: linear-gradient(to left top,
+        rgba($color-gray-light, 0.7),
+        rgba($color-tercero-light, 0.5));
   }
 }
