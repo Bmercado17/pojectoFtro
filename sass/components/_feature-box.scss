@@ -3,23 +3,23 @@
   background-color: rgba($color-white, 0.7);
   font-size: 1.5rem;
 
-  padding: 2.5rem; //this was 2 rem
+  padding: 2rem; //this was 2 rem
   text-align: center;
   border-radius: 1px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
   transition: transform 0.5s; // this affects the hover treansform code.. which always pairs up because is a reference to the parnt elmnt
+
   &__icon {
     font-size: 4rem;
     margin-bottom: 0.5rem;
-    background-image: linear-gradient(
-      to left,
-      $color-gray-dark,
-      $color-secondary-light
-    );
+    background-image: linear-gradient(to left,
+        $color-gray-dark,
+        $color-secondary-light);
     -webkit-background-clip: text; //this had the  -webkit-background-clip prefix
     color: transparent;
     display: inline-block;
   }
+
   &:hover {
     transform: translateY(-1.5rem) scale(1.02); //this is for when the card gets hover over it, the card pulls up in the Y direction
   }
