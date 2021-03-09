@@ -1,4 +1,5 @@
 @mixin clearfix {
+
   //this is to clear the floats/ when floating tables rows
   &::after {
     content: "";
@@ -6,3 +7,28 @@
     clear: both;
   }
 }
+
+// @media query manager
+/*
+0 - 600px = phone
+600 - 900 = tablet
+900 - 1200 laptop 
+1200 - 1800 desktop
+*/
+// @mixin respond-phone {
+//   @media(max-width: 600px){
+//     @content
+//   };
+// };
+
+/* break point argument
+phone
+tab-port
+lab-land
+big-desktop
+*/
+// @mixin respond($breakpoint) {
+// @if $breakpoint == phone {
+//  @media(max-width: 600px) {@content};
+// }
+// };
